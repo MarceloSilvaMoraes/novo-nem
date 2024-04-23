@@ -16,28 +16,43 @@
                 <div class="mLeft">
                     <nav>Grupo Nem</nav>
                 </div>
-                <nav class="mRight">
-
-                    <ul>
-                        <li><a href=""> Me Liga</a></li>
-                    </ul>
-                    <ul>
-                        <li><a href=""> Whatsapp</a></li>
-                    </ul>
-                    <ul>
-                        <li><a href=""> Volte a estudar</a></li>
-                    </ul>
-                    <ul>
-                        <li><a href=""> Sou Professor</a></li>
-                    </ul>
-                    <ul>
-                        <li><a href=""> Sou Aluno</a></li>
-                    </ul>
-                </nav>
+                <div class="mr">
+                    <nav class="mRight">
+                        <ul>
+                            <li><a href=""> Me Liga</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href=""> Whatsapp</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href=""> Volte a estudar</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href=""> Sou Professor</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href=""> Sou Aluno</a></li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
             <div class="main-bottom">
+                <div class="navResp">
+                    <nav class="navbar" id="navbar">
+                        <div id="navBurguer">
+                            <div class="burguer" onclick="abrirMenu()">
+                            </div>
+
+                        </div>
+                    </nav>
+                    <div class="imgResp">
+                        <a href="">
+                            <img src="<?= $base ?>/assets/images/logo.png" width="85">
+                        </a>
+                    </div>
+                </div>
                 <a href="">
-                    <img src="<?=$base?>/assets/images/logo.png">
+                    <img src="<?= $base ?>/assets/images/logo.png">
                 </a>
                 <nav class="mBottom">
                     <ul>
@@ -56,12 +71,30 @@
                         <li><a href="">Fale Conosco</a></li>
                     </ul>
                 </nav>
-                <div>
-                <a href="">
-                    Inscreva-Se
-                </a>
+                <div class="btnInscrevase">
+                    <a href="">
+                        <span>
+                            INSCREVA-SE
+                        </span>
+                    </a>
                 </div>
+
+
             </div>
         </div>
 
     </header>
+    <!-- <div class="flex">
+        <nav class="navbar" id="navbar">
+            <div id="navBurguer">
+                <div class="burguer" onclick="abrirMenu()">
+                </div>
+
+            </div>
+        </nav>
+        <div>
+            <a href="">
+                <img src="<?= $base ?>/assets/images/logo.png" width="85">
+            </a>
+        </div>
+    </div> -->
