@@ -1,0 +1,83 @@
+body {
+    padding: 0;
+    margin: 0;
+    color: rgba(29, 29, 29, 0.87);
+    font-family: Montserrat, sans-serif;
+    background: rgb(245, 245, 245);
+    font-size: 1rem;
+}
+
+.header {
+    width: 100%;
+    gap: 1.5rem;
+    flex-direction: column;
+    display: flex;
+    padding: 0px;
+    margin: 0px;
+    background-color: rgb(252, 252, 252);
+    box-shadow: rgba(29, 29, 29, 0.09) 0px 3px 4px;
+    box-sizing: border-box;
+    position: fixed;
+    z-index: 9999;
+    top: 0px;
+    left: 0px;
+}
+
+.main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-top {
+    box-sizing: border-box;
+    padding: 0.5rem 12px;
+    width: 100%;
+    max-width: 1440px;
+    margin: 0px auto;
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    gap: 0px;
+    border-bottom: 1px solid rgb(219, 219, 219);
+}
+
+.mRight,
+.mLeft {
+    width: 100%;
+    -webkit-box-pack: end;
+    justify-content: flex-end;
+}
+
+.mLeft {
+    width: 100%;
+    -webkit-box-pack: end;
+    justify-content: flex-start;
+    display: flex;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+}
+
+.main-bottom {
+    box-sizing: border-box;
+    padding: 0px 12px;
+    width: 100%;
+    max-width: 1440px;
+    margin: 0px auto;
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+    /* background-color: blue; */
+}
+
+.main-bottom a img {
+    color: transparent;
+    display: inline-block;
+    /* height: 50px; */
+    width: 85px;
+}
