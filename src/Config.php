@@ -2,7 +2,7 @@
 namespace src;
 
 class Config {
-    const BASE_DIR = '/novo_nem/public';
+    const BASE_DIR = '/novo-nem/public';
 
     const DB_DRIVER = 'mysql';
     const DB_HOST = 'localhost';

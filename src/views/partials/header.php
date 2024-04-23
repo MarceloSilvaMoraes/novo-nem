@@ -10,7 +10,7 @@
 
 <body>
 
-    <header>
+    <header class="header">
         <div class="main">
             <div class="main-top">
                 <div class="mLeft">
@@ -39,8 +39,28 @@
                 <a href="">
                     <img src="<?=$base?>/assets/images/logo.png">
                 </a>
-                <nav></nav>
-                <div></div>
+                <nav class="mBottom">
+                    <ul>
+                        <li><a href="">O Grupo Nem</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="">Como Ingressar</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="">Cursos</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="">Unidades</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="">Fale Conosco</a></li>
+                    </ul>
+                </nav>
+                <div>
+                <a href="">
+                    Inscreva-Se
+                </a>
+                </div>
             </div>
         </div>
 

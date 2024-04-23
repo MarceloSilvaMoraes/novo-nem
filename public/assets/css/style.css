@@ -49,6 +49,38 @@ body {
     justify-content: flex-end;
 }
 
+.mRight ul {
+    width: 100%;
+    display: flex;
+    padding: 0px;
+    margin: 0px;
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+}
+
+.mRight ul li,
+.mBottom ul li {
+    list-style: none;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.mRight ul li a,
+.mBottom ul li a {
+    text-decoration: none;
+}
+
+.mRight ul li a {
+    color: black;
+    font-weight: 300;
+}
+
+.mBottom ul li a {
+    color: black;
+    font-weight: 900;
+}
+
 .mLeft {
     width: 100%;
     -webkit-box-pack: end;
