@@ -112,7 +112,8 @@ body {
     align-items: center;
 }
 
-nav {
+.mRight,
+.mBottom {
     display: flex;
 }
 
@@ -180,27 +181,25 @@ nav {
 }
 
 #navBurguer {
-    background-color: red;
     width: 52px;
-    height: 44px;
+    height: 52px;
     line-height: 50px;
     position: absolute;
     top: 9px;
     margin-left: 15px;
     display: none;
+    cursor: pointer;
+    line-height: 52px;
+    /* background-color: #ccc; */
+}
+
+#navBurguer:hover {
+    background-color: #eee7e7;
+    border-radius: 50%;
 }
 
 #navbar span {
     font-size: 32px;
-}
-
-.burguer {
-    width: 50px;
-    height: 50px;
-    cursor: pointer;
-    position: absolute;
-    top: 7px;
-    margin-left: 0;
 }
 
 .burguer:before {
@@ -217,15 +216,18 @@ nav {
 }
 
 .burguer {
+    height: 50px;
+    margin-left: 0;
     z-index: 99;
     height: 4px;
     width: 33px;
     cursor: pointer;
     position: absolute;
-    top: 7px;
+    top: 11px;
     margin-left: 9px;
     background-color: #000945;
     border-radius: 5px;
+    /* display: block; */
 }
 
 .burguer::after {
@@ -242,7 +244,7 @@ nav {
 }
 
 .imgResp a img {
-    display: none;
+    opacity: 0;
 }
 
 @media (max-width:985px) {
@@ -254,16 +256,97 @@ nav {
         position: relative;
         top: 0px;
     }
-    .main-bottom a img,
-    .mBottom {
+    .main-bottom a img {
         display: none;
     }
     .imgResp a img {
         display: block;
+        opacity: 1;
+        transition: opacity .5s;
     }
-    .navResp {
+    .menuMobile {
         display: flex;
         align-items: center;
         justify-content: center;
+    }
+    .mBottom {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 131px;
+        background: rgb(252 252 252);
+        width: 100%;
+        left: 0;
+        transition: all;
+        transition-duration: 0.5s;
+        transition-delay: 0.5s;
+    }
+    .mRight {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 406px;
+        background: rgb(252 252 252);
+        width: 100%;
+        left: 0;
+        border-top: 1px solid #ccc;
+        transition: all;
+        transition-duration: 0.5s;
+        transition-delay: 0.5s;
+    }
+    .mRight ul {
+        margin-left: 25px;
+        margin-top: 15px;
+    }
+    /* .mRight ul li a:hover {
+        background-color: blue;
+    } */
+    .menuAtivo {
+        width: 100%;
+        left: -100%;
+        transition: all;
+        transition-duration: 0.5s;
+        transition-delay: 0.5s;
+    }
+    .xburguer {
+        height: 50px;
+        margin-left: 0;
+        z-index: 99;
+        height: 4px;
+        width: 33px;
+        cursor: pointer;
+        position: absolute;
+        top: 7px;
+        margin-left: 9px;
+        background-color: #000945;
+        border-radius: 5px;
+    }
+    .xburguer:after {
+        content: '';
+        z-index: 99;
+        height: 4px;
+        width: 33px;
+        cursor: pointer;
+        position: absolute;
+        top: 16px;
+        margin-left: 0px;
+        background-color: #000945;
+        border-radius: 5px;
+        /* display: none; */
+        transform: rotate(-131deg);
+    }
+    .xburguer:before {
+        content: '';
+        z-index: 99;
+        height: 4px;
+        width: 33px;
+        cursor: pointer;
+        position: absolute;
+        top: 16px;
+        margin-left: 0px;
+        background-color: #000945;
+        border-radius: 5px;
+        /* display: none; */
+        transform: rotate(130deg);
     }
 }

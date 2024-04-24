@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="assets/imagens/logo.png" type="image/x-icon" />
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="<?=$base?>/assets/css/style.css">
 </head>
 
 <body>
@@ -17,7 +17,7 @@
                     <nav>Grupo Nem</nav>
                 </div>
                 <div class="mr">
-                    <nav class="mRight">
+                    <nav class="mRight menuAtivo">
                         <ul>
                             <li><a href=""> Me Liga</a></li>
                         </ul>
@@ -37,12 +37,11 @@
                 </div>
             </div>
             <div class="main-bottom">
-                <div class="navResp">
+                <div class="menuMobile" onclick="abrirMenu()">
                     <nav class="navbar" id="navbar">
                         <div id="navBurguer">
-                            <div class="burguer" onclick="abrirMenu()">
+                            <div class="burguer">
                             </div>
-
                         </div>
                     </nav>
                     <div class="imgResp">
@@ -54,7 +53,7 @@
                 <a href="">
                     <img src="<?= $base ?>/assets/images/logo.png">
                 </a>
-                <nav class="mBottom">
+                <nav class="mBottom menuAtivo">
                     <ul>
                         <li><a href="">O Grupo Nem</a></li>
                     </ul>
@@ -84,17 +83,6 @@
         </div>
 
     </header>
-    <!-- <div class="flex">
-        <nav class="navbar" id="navbar">
-            <div id="navBurguer">
-                <div class="burguer" onclick="abrirMenu()">
-                </div>
 
-            </div>
-        </nav>
-        <div>
-            <a href="">
-                <img src="<?= $base ?>/assets/images/logo.png" width="85">
-            </a>
-        </div>
-    </div> -->
+
+    <script src="<?=$base?>/assets/js/script.js"></script>
