@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="assets/imagens/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="<?=$base?>/assets/css/styleHeader.css">
     <link rel="stylesheet" href="<?=$base?>/assets/css/style.css">
 </head>
 
@@ -44,11 +45,11 @@
                             </div>
                         </div>
                     </nav>
-                    <div class="imgResp">
+                    <!-- <div class="imgResp">
                         <a href="">
                             <img src="<?= $base ?>/assets/images/logo.png" width="85">
                         </a>
-                    </div>
+                    </div> -->
                 </div>
                 <a href="">
                     <img src="<?= $base ?>/assets/images/logo.png">
