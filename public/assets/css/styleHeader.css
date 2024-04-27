@@ -114,9 +114,9 @@ body {
     font-weight: 900;
     display: flex;
     text-decoration: none;
-    height: 68px;
+    height: 30px;
     box-sizing: border-box;
-    line-height: 70px;
+    line-height: 30px;
     position: relative;
     border-bottom: solid 2px transparent;
 }
@@ -291,26 +291,28 @@ body {
         display: flex;
         flex-direction: column;
         position: absolute;
-        top: 131px;
+        top: 117px;
         background: rgb(252 252 252);
         width: 100%;
         left: 0;
         transition: all;
-        transition-duration: 0.5s;
-        transition-delay: 0.5s;
+        transition-duration: 0.1s;
+        transition-delay: 0.1s;
+        z-index: 999;
     }
     .mRight {
         display: flex;
         flex-direction: column;
         position: absolute;
-        top: 406px;
+        top: 425px;
         background: rgb(252 252 252);
         width: 100%;
         left: 0;
         border-top: 1px solid #ccc;
         transition: all;
-        transition-duration: 0.5s;
-        transition-delay: 0.5s;
+        transition-duration: 0.1s;
+        transition-delay: 0.1s;
+        z-index: 99999999999999;
     }
     .mRight ul {
         margin-left: 25px;

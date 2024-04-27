@@ -63,7 +63,7 @@
                             Bacharelado - 10 Semestres
                         </p>
                         <div class="content--infos"><!----><!---->
-                            <div style="min-height: 78px;">
+                            <div class="" style="min-height: 78px;">
                                 <ul class="content__modality-ul">
                                     <li class="content__modality-item highlighted">
                                         Semipresencial
