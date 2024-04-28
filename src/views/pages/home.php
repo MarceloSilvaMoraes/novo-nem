@@ -65,7 +65,41 @@
                         <div class="content--infos"><!----><!---->
                             <div class="" style="min-height: 78px;">
                                 <ul class="content__modality-ul">
-                                    <li class="content__modality-item highlighted">
+                                    <li class="content__modality-item activeMod" data="data-ativo">
+                                        Semipresencial
+                                    </li>
+                                    <li class="content__modality-item" data="data-inativo">
+                                        Presencial
+                                    </li>
+                                </ul>
+                            </div>
+                            <div>
+                                <div class="content--details">
+                                    <p class="content__price">
+                                        R$ 299,00
+                                    </p>
+                                    <p class="content__shift">
+                                        Turnos:
+                                        Noite, Manhã
+                                    </p>
+                                </div>
+                            </div><!----><!----><!---->
+                        </div>
+                        <div class="content--actions"><a href="/inscricao/?id=44734500cbad09850ce30d4d3f62f56b" target="_blank" class="btn btn-primary-hcontrast outlined rounded" tabindex="0">Inscreva-se</a> <a href="/curso/enfermagem" target="_blank" class="content__btn-saiba-mais btn sm btn-color-bluegray outlined rounded" tabindex="0">Saiba Mais</a></div>
+                    </div>
+                </div>
+                <div class="carrosselItems">
+                    <div id="44734500cbad09850ce30d4d3f62f56b">
+                        <p class="content__title">
+                            Peagogia123
+                        </p>
+                        <p class="content__type-and-time">
+                            Bacharelado - 10 Semestres
+                        </p>
+                        <div class="content--infos"><!----><!---->
+                            <div style="min-height: 78px;">
+                                <ul class="content__modality-ul">
+                                    <li class="content__modality-item activeMod">
                                         Semipresencial
                                     </li>
                                     <li class="content__modality-item">
@@ -99,7 +133,7 @@
                         <div class="content--infos"><!----><!---->
                             <div style="min-height: 78px;">
                                 <ul class="content__modality-ul">
-                                    <li class="content__modality-item highlighted">
+                                    <li class="content__modality-item activeMod">
                                         Semipresencial
                                     </li>
                                     <li class="content__modality-item">
@@ -133,7 +167,7 @@
                         <div class="content--infos"><!----><!---->
                             <div style="min-height: 78px;">
                                 <ul class="content__modality-ul">
-                                    <li class="content__modality-item highlighted">
+                                    <li class="content__modality-item activeMod">
                                         Semipresencial
                                     </li>
                                     <li class="content__modality-item">
@@ -167,41 +201,7 @@
                         <div class="content--infos"><!----><!---->
                             <div style="min-height: 78px;">
                                 <ul class="content__modality-ul">
-                                    <li class="content__modality-item highlighted">
-                                        Semipresencial
-                                    </li>
-                                    <li class="content__modality-item">
-                                        Presencial
-                                    </li>
-                                </ul>
-                            </div>
-                            <div>
-                                <div class="content--details">
-                                    <p class="content__price">
-                                        R$ 299,00
-                                    </p>
-                                    <p class="content__shift">
-                                        Turnos:
-                                        Noite, Manhã
-                                    </p>
-                                </div>
-                            </div><!----><!----><!---->
-                        </div>
-                        <div class="content--actions"><a href="/inscricao/?id=44734500cbad09850ce30d4d3f62f56b" target="_blank" class="btn btn-primary-hcontrast outlined rounded" tabindex="0">Inscreva-se</a> <a href="/curso/enfermagem" target="_blank" class="content__btn-saiba-mais btn sm btn-color-bluegray outlined rounded" tabindex="0">Saiba Mais</a></div>
-                    </div>
-                </div>
-                <div class="carrosselItems">
-                    <div id="44734500cbad09850ce30d4d3f62f56b">
-                        <p class="content__title">
-                            Peagogia
-                        </p>
-                        <p class="content__type-and-time">
-                            Bacharelado - 10 Semestres
-                        </p>
-                        <div class="content--infos"><!----><!---->
-                            <div style="min-height: 78px;">
-                                <ul class="content__modality-ul">
-                                    <li class="content__modality-item highlighted">
+                                    <li class="content__modality-item activeMod">
                                         Semipresencial
                                     </li>
                                     <li class="content__modality-item">
@@ -239,6 +239,92 @@
     </div>
 </div>
 </div>
+<section class="comoIngressar">
+    <div class="ingresso">
+        <div class="ingressoOrg">
+            <div class="ingressoLeft">
+                <img src="<?= $base ?>/assets/images/left.jpg">
+            </div>
+            <div class="ingressoRight">
+                <h1>ESCOLHA COMO INGRESSAR</h1>
+                <div class="container-fluid py-3">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-6">
+                            <div class="title semibold dotted-underline mb-h mt-1">
+                                VESTIBULAR ONLINE
+                            </div>
+                            <div class="font-weight-400">
+                                Faça o Vestibular Anhanguera
+                            </div>
+                            A redação é feita pela internet e você
+                            pode escolher a hora e o local que
+                            preferir para fazer.
+                            <div>
+                                <button onclick="openWidget(); fireGA('anhanguera:home:como-ingressar','clique:cta','inscreva-se:vestibular')" class="btn btn-primary-hcontrast onlytext sm">
+                                    Inscreva-se
+                                </button>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6">
+                            <div class="title semibold dotted-underline mb-h mt-1" href="https://www.anhanguera.com/institucional/enem/">
+                                ENEM
+                            </div>
+                            <div class="font-weight-400">
+                                Fez Enem e quer usar sua nota?
+                            </div>
+                            Com a gente o seu desempenho é a sua
+                            porta de entrada.
+                            <div>
+                                <a role="button" onclick="fireGA('anhanguera:home:como-ingressar','clique:cta','saiba-mais:enem')" href="https://www.anhanguera.com/institucional/enem/" class="btn btn-color-bluegray onlytext sm">Saiba mais</a>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6">
+                            <div class="title semibold dotted-underline mb-h mt-1">
+                                2ª GRADUAÇÃO
+                            </div>
+                            <div class="font-weight-400">
+                                Já é formado e quer fazer outra
+                                graduação?
+                            </div>
+                            Aproveite seus conhecimentos e venha
+                            estudar na Anhanguera.
+                            <div>
+                                <a role="button" onclick="fireGA('anhanguera:home:como-ingressar','clique:cta','saiba-mais:segunda-graduacao')" href="https://www.anhanguera.com/paginas/segunda-graduacao/" class="btn btn-color-bluegray onlytext sm">Saiba mais</a>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6">
+                            <div class="title semibold dotted-underline mb-h mt-1">
+                                TRANSFERÊNCIA
+                            </div>
+                            <div class="font-weight-400">
+                                Vem concluir seu curso com a gente
+                            </div>
+                            E não precisa pagar nada pela
+                            transferência.
+                            <div>
+                                <a role="button" onclick="fireGA('anhanguera:home:como-ingressar','clique:cta','saiba-mais:transferencia')" href="https://www.anhanguera.com/transferencia-externa/" class="btn btn-color-bluegray onlytext sm">Saiba mais</a>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6">
+                            <div class="title semibold dotted-underline mb-h mt-1">
+                                Ex - Aluno
+                            </div>
+                            <div class="font-weight-400">
+                                Sentimos sua falta e queremos você
+                                de volta.
+                            </div>
+                            Temos certeza de que sempre é tempo para
+                            recomeçar.
+                            <div>
+                                <a role="button" onclick="fireGA('anhanguera:home:como-ingressar','clique:cta','saiba-mais:ex-aluno')" href="https://www.anhanguera.com/exaluno/" class="btn btn-color-bluegray onlytext sm">Saiba mais</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 <script src="<?= $base ?>/assets/js/scriptHeader.js"></script>
 
 <?php $render('footer'); ?>
