@@ -55,14 +55,15 @@
         <div class="moveCarrossel slider">
             <div class="carrosselOverflow slides">
                 <div class="carrosselItems">
-                    <div id="44734500cbad09850ce30d4d3f62f56b">
+                    <?php  ?>
+                    <div id="447">
                         <p class="content__title">
                             Peagogia
                         </p>
                         <p class="content__type-and-time">
                             Bacharelado - 10 Semestres
                         </p>
-                        <div class="content--infos"><!----><!---->
+                        <div class="content--infos">
                             <div class="" style="min-height: 78px;">
                                 <ul class="content__modality-ul">
                                     <li class="content__modality-item activeMod" data="data-ativo">
@@ -83,12 +84,12 @@
                                         Noite, Manhã
                                     </p>
                                 </div>
-                            </div><!----><!----><!---->
+                            </div>
                         </div>
                         <div class="content--actions"><a href="/inscricao/?id=44734500cbad09850ce30d4d3f62f56b" target="_blank" class="btn btn-primary-hcontrast outlined rounded" tabindex="0">Inscreva-se</a> <a href="/curso/enfermagem" target="_blank" class="content__btn-saiba-mais btn sm btn-color-bluegray outlined rounded" tabindex="0">Saiba Mais</a></div>
                     </div>
                 </div>
-                <div class="carrosselItems">
+                <!-- <div class="carrosselItems">
                     <div id="44734500cbad09850ce30d4d3f62f56b">
                         <p class="content__title">
                             Peagogia123
@@ -96,7 +97,7 @@
                         <p class="content__type-and-time">
                             Bacharelado - 10 Semestres
                         </p>
-                        <div class="content--infos"><!----><!---->
+                        <div class="content--infos">
                             <div style="min-height: 78px;">
                                 <ul class="content__modality-ul">
                                     <li class="content__modality-item activeMod">
@@ -117,7 +118,7 @@
                                         Noite, Manhã
                                     </p>
                                 </div>
-                            </div><!----><!----><!---->
+                            </div>
                         </div>
                         <div class="content--actions"><a href="/inscricao/?id=44734500cbad09850ce30d4d3f62f56b" target="_blank" class="btn btn-primary-hcontrast outlined rounded" tabindex="0">Inscreva-se</a> <a href="/curso/enfermagem" target="_blank" class="content__btn-saiba-mais btn sm btn-color-bluegray outlined rounded" tabindex="0">Saiba Mais</a></div>
                     </div>
@@ -130,7 +131,7 @@
                         <p class="content__type-and-time">
                             Bacharelado - 10 Semestres
                         </p>
-                        <div class="content--infos"><!----><!---->
+                        <div class="content--infos">
                             <div style="min-height: 78px;">
                                 <ul class="content__modality-ul">
                                     <li class="content__modality-item activeMod">
@@ -151,7 +152,7 @@
                                         Noite, Manhã
                                     </p>
                                 </div>
-                            </div><!----><!----><!---->
+                            </div>
                         </div>
                         <div class="content--actions"><a href="/inscricao/?id=44734500cbad09850ce30d4d3f62f56b" target="_blank" class="btn btn-primary-hcontrast outlined rounded" tabindex="0">Inscreva-se</a> <a href="/curso/enfermagem" target="_blank" class="content__btn-saiba-mais btn sm btn-color-bluegray outlined rounded" tabindex="0">Saiba Mais</a></div>
                     </div>
@@ -164,7 +165,7 @@
                         <p class="content__type-and-time">
                             Bacharelado - 10 Semestres
                         </p>
-                        <div class="content--infos"><!----><!---->
+                        <div class="content--infos">
                             <div style="min-height: 78px;">
                                 <ul class="content__modality-ul">
                                     <li class="content__modality-item activeMod">
@@ -185,7 +186,7 @@
                                         Noite, Manhã
                                     </p>
                                 </div>
-                            </div><!----><!----><!---->
+                            </div>
                         </div>
                         <div class="content--actions"><a href="/inscricao/?id=44734500cbad09850ce30d4d3f62f56b" target="_blank" class="btn btn-primary-hcontrast outlined rounded" tabindex="0">Inscreva-se</a> <a href="/curso/enfermagem" target="_blank" class="content__btn-saiba-mais btn sm btn-color-bluegray outlined rounded" tabindex="0">Saiba Mais</a></div>
                     </div>
@@ -198,7 +199,7 @@
                         <p class="content__type-and-time">
                             Bacharelado - 10 Semestres
                         </p>
-                        <div class="content--infos"><!----><!---->
+                        <div class="content--infos">
                             <div style="min-height: 78px;">
                                 <ul class="content__modality-ul">
                                     <li class="content__modality-item activeMod">
@@ -219,11 +220,11 @@
                                         Noite, Manhã
                                     </p>
                                 </div>
-                            </div><!----><!----><!---->
+                            </div>
                         </div>
                         <div class="content--actions"><a href="/inscricao/?id=44734500cbad09850ce30d4d3f62f56b" target="_blank" class="btn btn-primary-hcontrast outlined rounded" tabindex="0">Inscreva-se</a> <a href="/curso/enfermagem" target="_blank" class="content__btn-saiba-mais btn sm btn-color-bluegray outlined rounded" tabindex="0">Saiba Mais</a></div>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
     </div>

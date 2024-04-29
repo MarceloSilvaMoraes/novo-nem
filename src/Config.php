@@ -1,6 +1,10 @@
 <?php
 namespace src;
 
+use PDO;
+
+$pdo = new PDO();
+
 class Config {
     const BASE_DIR = '/novo-nem/public';
 
@@ -13,3 +17,4 @@ class Config {
     const ERROR_CONTROLLER = 'ErrorController';
     const DEFAULT_ACTION = 'index';
 }
+global $pdo;
