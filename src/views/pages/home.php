@@ -8,6 +8,8 @@
         <option>Tecnológico</option>
     </select>
 </form>
+
+
 <section class="bannerHome">
     <div class="container">
         <div class="styleContainer">
@@ -54,41 +56,42 @@
     <div class="carrosselWidth">
         <div class="moveCarrossel slider">
             <div class="carrosselOverflow slides">
-                <div class="carrosselItems">
-                    <?php  ?>
-                    <div id="447">
-                        <p class="content__title">
-                            Peagogia
-                        </p>
-                        <p class="content__type-and-time">
-                            Bacharelado - 10 Semestres
-                        </p>
-                        <div class="content--infos">
-                            <div class="" style="min-height: 78px;">
-                                <ul class="content__modality-ul">
-                                    <li class="content__modality-item activeMod" data="data-ativo">
-                                        Semipresencial
-                                    </li>
-                                    <li class="content__modality-item" data="data-inativo">
-                                        Presencial
-                                    </li>
-                                </ul>
-                            </div>
-                            <div>
-                                <div class="content--details">
-                                    <p class="content__price">
-                                        R$ 299,00
-                                    </p>
-                                    <p class="content__shift">
-                                        Turnos:
-                                        Noite, Manhã
-                                    </p>
+                <?php foreach ($dados as $res) : ?>
+                    <div class="carrosselItems">
+                        <?php  ?>
+                        <div id="447">
+                            <p class="content__title">
+                                <?php echo $res['nome_curso']; ?>
+                            </p>
+                            <p class="content__type-and-time">
+                                Bacharelado -  <?php echo $res['duracao']; ?>
+                            </p>
+                            <div class="content--infos">
+                                <div class="" style="min-height: 78px;">
+                                    <ul class="content__modality-ul">
+                                        <li class="content__modality-item activeMod" data="data-ativo">
+                                        <?php echo $res['modalidade']; ?>
+                                        </li>
+                                        <li class="content__modality-item" data="data-inativo" >
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <div class="content--details">
+                                        <p class="content__price">
+                                        <?php echo $res['valor']; ?>
+                                        </p>
+                                        <p class="content__shift">
+                                            Turnos:
+                                            <?php echo $res['turno']; ?>
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
+                            <div class="content--actions"><a href="/inscricao/?id=44734500cbad09850ce30d4d3f62f56b" target="_blank" class="btn btn-primary-hcontrast outlined rounded" tabindex="0">Inscreva-se</a> <a href="/curso/enfermagem" target="_blank" class="content__btn-saiba-mais btn sm btn-color-bluegray outlined rounded" tabindex="0">Saiba Mais</a></div>
                         </div>
-                        <div class="content--actions"><a href="/inscricao/?id=44734500cbad09850ce30d4d3f62f56b" target="_blank" class="btn btn-primary-hcontrast outlined rounded" tabindex="0">Inscreva-se</a> <a href="/curso/enfermagem" target="_blank" class="content__btn-saiba-mais btn sm btn-color-bluegray outlined rounded" tabindex="0">Saiba Mais</a></div>
                     </div>
-                </div>
+                <?php endforeach; ?>
                 <!-- <div class="carrosselItems">
                     <div id="44734500cbad09850ce30d4d3f62f56b">
                         <p class="content__title">

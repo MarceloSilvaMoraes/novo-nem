@@ -68,3 +68,7 @@ ddd.forEach((at, inde) => {
 //     // console.log(dataItm);
 
 // })
+
+// document.querySelector("#navBurguer").addEventListener("click", () => {
+//     document.querySelector(".xburguer").style.transform = "rotate(45deg)";
+// })

@@ -1,12 +1,14 @@
 <?php
 namespace src\models;
-namespace src\Config;
-use \core\Model;
-use \src\Config;
 
-class Cursos extends Model{
-public function getAllCurso(){
-    $sql = $pdo->prepare("SELECT * FROM ");
-    $sql = $this->pdo;
-}
+use \core\Database;
+
+class Cursos  {
+    public function getAllCursos() {
+    $connection = Database::getInstance();
+    $statement = $connection->query("SELECT * FROM cursos");
+    $cursos = $statement->fetchAll();
+    return $cursos;
+
+    }
 }

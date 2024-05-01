@@ -1,20 +1,20 @@
 <?php
+
 namespace src\controllers;
 
+use src\models\Cursos;
 use \core\Controller;
 
-class HomeController extends Controller {
 
-    public function index() {
-        $this->render('home');
+class HomeController extends Controller
+{
+    public function index()
+    {
+        $data = new Cursos();
+
+        $dados = $data->getAllCursos();
+        $this->render('home', [
+            'dados' => $dados
+        ]);
     }
-
-    public function sobre() {
-        $this->render('sobre');
-    }
-
-    public function sobreP($args) {
-        print_r($args);
-    }
-
 }
