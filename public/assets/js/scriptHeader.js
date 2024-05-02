@@ -51,7 +51,6 @@ ddd.forEach((at, inde) => {
         if (at.classList.contains("activeMod")) {
             at.classList.add("activeMod");
             at.nextElementSibling.classList.remove("activeMod");
-            document.querySelector(".content__price").innerHTML = "R$ 333, 29";
             // console.log(at);
 
         }

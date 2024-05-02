@@ -11,22 +11,27 @@ class HomeController extends Controller
     {
         $data = new Cursos();
 
-        $idSemOnline = filter_input(INPUT_POST, "idSemOnline");
-        $resposta = $data->cursos_cem_online($idSemOnline);
-        echo json_encode($resposta);
-
-        $dados = $data->cursos_semipresencial();
-
+        // $idSemi = filter_input(INPUT_POST, "idSemi");
+        $dados = $data->getAllCursos();
+        // echo json_encode($dados);
         $this->render('home', [
             'dados' => $dados
         ]);
     }
-    public function action()
+    public function sem_online()
     {
         $data = new Cursos();
 
         $idSemOnline = filter_input(INPUT_POST, "idSemOnline");
         $resposta = $data->cursos_cem_online($idSemOnline);
-        print_r($resposta);
+        echo json_encode($resposta);
+    }
+    public function semi()
+    {
+        $data = new Cursos();
+
+        $idSemOnline = filter_input(INPUT_POST, "idSemOnline");
+        $resposta = $data->cursos_semi($idSemOnline);
+        echo json_encode($resposta);
     }
 }

@@ -21,19 +21,19 @@
                 <div class="mr">
                     <nav class="mRight menuAtivo">
                         <ul>
-                            <li><a href=""> Me Liga</a></li>
+                            <li><a href="">Me Liga</a></li>
                         </ul>
                         <ul>
                             <li><a href=""> Whatsapp</a></li>
                         </ul>
                         <ul>
-                            <li><a href=""> Volte a estudar</a></li>
+                            <li><a target="_blank" href="https://www.unopar.com.br/exaluno"> Volte a estudar</a></li>
                         </ul>
                         <ul>
-                            <li><a href=""> Sou Professor</a></li>
+                            <li><a target="_blank" href="https://docenteonline.kroton.com.br/login.php"> Sou Professor</a></li>
                         </ul>
                         <ul>
-                            <li><a href=""> Sou Aluno</a></li>
+                            <li><a target="_blank" href="https://login.unopar.br/"> Sou Aluno</a></li>
                         </ul>
                     </nav>
                 </div>

@@ -60,7 +60,7 @@
                     <div class="carrosselItems">
                         <?php  ?>
                         <div id="447">
-                            <p class="content__title">
+                            <p class="content__title" id="nem" >
                                 <?php echo $res['nome_curso']; ?>
                             </p>
                             <p class="content__type-and-time">
@@ -69,11 +69,11 @@
                             <div class="content--infos">
                                 <div class="" style="min-height: 78px;">
                                     <ul class="content__modality-ul">
-                                        <li class="content__modality-item activeMod" data="data-ativo">
+                                        <li class="content__modality-item activeMod" data="<?php echo $res['id']; ?>" id="<?php echo $res['id']; ?>" onclick="dados(<?php echo $res['id']; ?>)">
                                         <?php echo $res['modalidade']; ?>
                                         </li>
-                                        <li class="content__modality-item" data="data-inativo" onclick="getSemOnline(<?php echo $res['id_modalidade02']; ?>)">
-                                        <?php echo $res['modalidade02']; ?>
+                                        <li class="content__modality-item inativo" data="<?php echo $res['id_modalidade02']; ?>" id="<?php echo $res['id_modalidade02']; ?>" onclick="getSemOnline(<?php echo $res['id_modalidade02']; ?>)">
+                                        <?php echo $res['id_modalidade02']; ?>
                                         </li>
                                     </ul>
                                 </div>
