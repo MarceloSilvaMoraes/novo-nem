@@ -2,14 +2,8 @@
 
 namespace src\controllers;
 
-
 use src\models\Cursos;
-
 use \core\Controller;
-use \core\Database;
-// use \src\Config;
-
-
 
 class HomeController extends Controller
 {
@@ -17,10 +11,22 @@ class HomeController extends Controller
     {
         $data = new Cursos();
 
+        $idSemOnline = filter_input(INPUT_POST, "idSemOnline");
+        $resposta = $data->cursos_cem_online($idSemOnline);
+        echo json_encode($resposta);
 
-        $dados = $data->getAllCursos();
+        $dados = $data->cursos_semipresencial();
+
         $this->render('home', [
             'dados' => $dados
         ]);
+    }
+    public function action()
+    {
+        $data = new Cursos();
+
+        $idSemOnline = filter_input(INPUT_POST, "idSemOnline");
+        $resposta = $data->cursos_cem_online($idSemOnline);
+        print_r($resposta);
     }
 }

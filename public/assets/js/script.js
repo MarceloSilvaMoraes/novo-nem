@@ -23,6 +23,24 @@ function abrirMenu() {
         document.querySelector(".xburguer").style.display = "none";
 
     }
+}
 
+function getSemOnline(valor) {
+    // console.log(valor);
+    let idSemOnline = new FormData();
+    idSemOnline.append("idSemOnline", valor);
+    fetch("http://localhost/novo-nem/public/action", {
+        method: "POST",
+        body: idSemOnline
 
+    }).then(res => {
+        return res.text();
+    }).then((json) => {
+        // var objeto = {};
+        // for (var i in json) {
+        //     console.log("ID:", json[i]);
+        // }
+        console.log("ID:", json["id"]);
+        console.log("ID:", json[0]);
+    })
 }

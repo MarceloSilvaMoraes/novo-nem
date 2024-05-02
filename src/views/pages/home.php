@@ -72,14 +72,15 @@
                                         <li class="content__modality-item activeMod" data="data-ativo">
                                         <?php echo $res['modalidade']; ?>
                                         </li>
-                                        <li class="content__modality-item" data="data-inativo" >
+                                        <li class="content__modality-item" data="data-inativo" onclick="getSemOnline(<?php echo $res['id_modalidade02']; ?>)">
+                                        <?php echo $res['modalidade02']; ?>
                                         </li>
                                     </ul>
                                 </div>
                                 <div>
                                     <div class="content--details">
                                         <p class="content__price">
-                                        <?php echo $res['valor']; ?>
+                                        <?php echo $res['preco']; ?>
                                         </p>
                                         <p class="content__shift">
                                             Turnos:
