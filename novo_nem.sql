@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Tempo de geração: 01-Maio-2024 às 00:50
+-- Tempo de geração: 03-Maio-2024 às 14:50
 -- Versão do servidor: 8.2.0
 -- versão do PHP: 7.4.33
 
@@ -24,61 +24,57 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Estrutura da tabela `cursos`
+-- Estrutura da tabela `cursos_cem_online`
 --
 
-DROP TABLE IF EXISTS `cursos`;
-CREATE TABLE IF NOT EXISTS `cursos` (
+DROP TABLE IF EXISTS `cursos_cem_online`;
+CREATE TABLE IF NOT EXISTS `cursos_cem_online` (
   `id` int NOT NULL AUTO_INCREMENT,
-  `nome_curso` varchar(100) NOT NULL,
-  `duracao` varchar(100) NOT NULL,
-  `modalidade` varchar(100) NOT NULL,
-  `valor` varchar(100) NOT NULL,
-  `turno` varchar(100) NOT NULL,
-  `turno02` varchar(100) CHARACTER SET utf8mb3 COLLATE utf8mb3_general_ci DEFAULT NULL,
+  `nome_curso_cem` varchar(100) CHARACTER SET utf8mb3 COLLATE utf8mb3_general_ci NOT NULL,
+  `modalidade02` varchar(100) NOT NULL,
+  `duracao02` varchar(100) CHARACTER SET utf8mb3 COLLATE utf8mb3_general_ci NOT NULL,
+  `preco02` varchar(100) CHARACTER SET utf8mb3 COLLATE utf8mb3_general_ci NOT NULL,
+  `turno02` varchar(100) CHARACTER SET utf8mb3 COLLATE utf8mb3_general_ci NOT NULL,
+  `saiba_mais` varchar(100) NOT NULL,
+  `status` varchar(100) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb3;
+) ENGINE=MyISAM AUTO_INCREMENT=21 DEFAULT CHARSET=utf8mb3;
 
 --
--- Extraindo dados da tabela `cursos`
+-- Extraindo dados da tabela `cursos_cem_online`
 --
 
-INSERT INTO `cursos` (`id`, `nome_curso`, `duracao`, `modalidade`, `valor`, `turno`, `turno02`) VALUES
-(1, 'Pedagogia', '3 anos', 'semipresencial', '350,00', '', ''),
-(2, 'Matematica', '2 anos e meio', '', '', '', ''),
-(3, 'Educação Física', '4 anos', '', '', '', ''),
-(4, 'Engenharia', '5 anos', '', '', '', ''),
-(5, 'Pedagogia', '3 anos', '100% online', '230,00', '', '');
+INSERT INTO `cursos_cem_online` (`id`, `nome_curso_cem`, `modalidade02`, `duracao02`, `preco02`, `turno02`, `saiba_mais`, `status`) VALUES
+(2, 'Pedagogia', '100% online', '2 anos', '199,00', 'faz seu horário', '', '0'),
+(1, 'Letras', '100% online', '2 anos', '199,00', 'faz seu horário', '', '1');
 
 -- --------------------------------------------------------
 
 --
--- Estrutura da tabela `cursos_destaques`
+-- Estrutura da tabela `cursos_semipresencial`
 --
 
-DROP TABLE IF EXISTS `cursos_destaques`;
-CREATE TABLE IF NOT EXISTS `cursos_destaques` (
+DROP TABLE IF EXISTS `cursos_semipresencial`;
+CREATE TABLE IF NOT EXISTS `cursos_semipresencial` (
   `id` int NOT NULL AUTO_INCREMENT,
-  `id_curso` int NOT NULL,
   `nome_curso` varchar(100) NOT NULL,
   `modalidade` varchar(100) NOT NULL,
-  `modalidade02` varchar(100) NOT NULL,
-  `id_modalidade` int NOT NULL,
+  `id_modalidade02` int NOT NULL,
   `duracao` varchar(100) NOT NULL,
   `preco` varchar(100) NOT NULL,
   `turno` varchar(100) NOT NULL,
+  `saiba_mais` varchar(100) NOT NULL,
+  `status` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb3;
+) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb3;
 
 --
--- Extraindo dados da tabela `cursos_destaques`
+-- Extraindo dados da tabela `cursos_semipresencial`
 --
 
-INSERT INTO `cursos_destaques` (`id`, `id_curso`, `nome_curso`, `modalidade`, `modalidade02`, `id_modalidade`, `duracao`, `preco`, `turno`) VALUES
-(1, 1, 'Pedagogia', 'Semipresencial', '100% online', 1, '3 anos', '299,99', 'Noite'),
-(2, 0, 'Engenharia', 'Semipresencial', '100% online', 0, '3 anos', '299,99', 'Faz no seu horário'),
-(3, 0, 'Educação Física', 'Semipresencial', '100% online', 0, '3 anos', '299,99', 'Faz no seu horário'),
-(4, 1, 'Pedagogia', '100% online', 'Semipresencial', 2, '3 anos e meio', '225,99', 'Faz no seu horário');
+INSERT INTO `cursos_semipresencial` (`id`, `nome_curso`, `modalidade`, `id_modalidade02`, `duracao`, `preco`, `turno`, `saiba_mais`, `status`) VALUES
+(1, 'Letras', 'semipresencial', 1, '4 anos', '300,00', 'manhã', '', 0),
+(2, 'Pedagogia', 'semipresencial', 2, '4 anos', '300,00', 'noturno', '', 1);
 
 -- --------------------------------------------------------
 

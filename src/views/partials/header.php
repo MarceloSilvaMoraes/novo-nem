@@ -5,8 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="assets/imagens/logo.png" type="image/x-icon" />
-    <link rel="stylesheet" href="<?=$base?>/assets/css/styleHeader.css">
     <link rel="stylesheet" href="<?=$base?>/assets/css/style.css">
+
+    <link rel="stylesheet" href="<?=$base?>/assets/css/styleHeader.css">
 
 </head>
 
@@ -69,7 +70,7 @@
                         <li><a href="">Unidades</a></li>
                     </ul>
                     <ul>
-                        <li><a href="">Fale Conosco</a></li>
+                        <li><a target="_blank" href="https://www.unopar.com.br/faq/">Fale Conosco</a></li>
                     </ul>
                 </nav>
                 <div class="btnInscrevase">
@@ -86,5 +87,3 @@
 
     </header>
 
-
-    <script src="<?=$base?>/assets/js/script.js"></script>

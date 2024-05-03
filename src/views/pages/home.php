@@ -58,29 +58,28 @@
             <div class="carrosselOverflow slides">
                 <?php foreach ($dados as $res) : ?>
                     <div class="carrosselItems">
-                        <?php  ?>
-                        <div id="447">
-                            <p class="content__title" id="nem" >
+                        <div class="car" id="<?php echo $res['id']; ?>">
+                            <p class="content__title">
                                 <?php echo $res['nome_curso']; ?>
                             </p>
                             <p class="content__type-and-time">
-                                Bacharelado -  <?php echo $res['duracao']; ?>
+                                Bacharelado - <?php echo $res['duracao']; ?>
                             </p>
                             <div class="content--infos">
                                 <div class="" style="min-height: 78px;">
                                     <ul class="content__modality-ul">
-                                        <li class="content__modality-item activeMod" data="<?php echo $res['id']; ?>" id="<?php echo $res['id']; ?>" onclick="dados(<?php echo $res['id']; ?>)">
-                                        <?php echo $res['modalidade']; ?>
+                                        <li class="content__modality-item activeMod" id="<?php echo $res['id']; ?>">
+                                            <?php echo $res['modalidade']; ?>
                                         </li>
-                                        <li class="content__modality-item inativo" data="<?php echo $res['id_modalidade02']; ?>" id="<?php echo $res['id_modalidade02']; ?>" onclick="getSemOnline(<?php echo $res['id_modalidade02']; ?>)">
-                                        <?php echo $res['id_modalidade02']; ?>
+                                        <li class="content__modality-item inativo" data="<?php echo $res['id']; ?>" id="<?php echo $res['id_modalidade02']; ?>">
+                                            <?php echo $res['modalidade02']; ?>
                                         </li>
                                     </ul>
                                 </div>
                                 <div>
                                     <div class="content--details">
                                         <p class="content__price">
-                                        <?php echo $res['preco']; ?>
+                                            <?php echo $res['preco']; ?>
                                         </p>
                                         <p class="content__shift">
                                             Turnos:
@@ -89,146 +88,13 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="content--actions"><a href="/inscricao/?id=44734500cbad09850ce30d4d3f62f56b" target="_blank" class="btn btn-primary-hcontrast outlined rounded" tabindex="0">Inscreva-se</a> <a href="/curso/enfermagem" target="_blank" class="content__btn-saiba-mais btn sm btn-color-bluegray outlined rounded" tabindex="0">Saiba Mais</a></div>
+                            <div class="content--actions">
+                                <a href="https://www.unopar.com.br/inscricao/curso?brand=unopar&campaign=29&channel=81&style=wrapped" target="_blank" class="btn btn-primary-hcontrast outlined rounded" tabindex="0">Inscreva-se</a>
+                                <a href="/curso/enfermagem" target="_blank" class="content__btn-saiba-mais btn sm btn-color-bluegray outlined rounded" tabindex="0">Saiba Mais</a>
+                            </div>
                         </div>
                     </div>
                 <?php endforeach; ?>
-                <!-- <div class="carrosselItems">
-                    <div id="44734500cbad09850ce30d4d3f62f56b">
-                        <p class="content__title">
-                            Peagogia123
-                        </p>
-                        <p class="content__type-and-time">
-                            Bacharelado - 10 Semestres
-                        </p>
-                        <div class="content--infos">
-                            <div style="min-height: 78px;">
-                                <ul class="content__modality-ul">
-                                    <li class="content__modality-item activeMod">
-                                        Semipresencial
-                                    </li>
-                                    <li class="content__modality-item">
-                                        Presencial
-                                    </li>
-                                </ul>
-                            </div>
-                            <div>
-                                <div class="content--details">
-                                    <p class="content__price">
-                                        R$ 299,00
-                                    </p>
-                                    <p class="content__shift">
-                                        Turnos:
-                                        Noite, Manhã
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="content--actions"><a href="/inscricao/?id=44734500cbad09850ce30d4d3f62f56b" target="_blank" class="btn btn-primary-hcontrast outlined rounded" tabindex="0">Inscreva-se</a> <a href="/curso/enfermagem" target="_blank" class="content__btn-saiba-mais btn sm btn-color-bluegray outlined rounded" tabindex="0">Saiba Mais</a></div>
-                    </div>
-                </div>
-                <div class="carrosselItems">
-                    <div id="44734500cbad09850ce30d4d3f62f56b">
-                        <p class="content__title">
-                            Peagogia
-                        </p>
-                        <p class="content__type-and-time">
-                            Bacharelado - 10 Semestres
-                        </p>
-                        <div class="content--infos">
-                            <div style="min-height: 78px;">
-                                <ul class="content__modality-ul">
-                                    <li class="content__modality-item activeMod">
-                                        Semipresencial
-                                    </li>
-                                    <li class="content__modality-item">
-                                        Presencial
-                                    </li>
-                                </ul>
-                            </div>
-                            <div>
-                                <div class="content--details">
-                                    <p class="content__price">
-                                        R$ 299,00
-                                    </p>
-                                    <p class="content__shift">
-                                        Turnos:
-                                        Noite, Manhã
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="content--actions"><a href="/inscricao/?id=44734500cbad09850ce30d4d3f62f56b" target="_blank" class="btn btn-primary-hcontrast outlined rounded" tabindex="0">Inscreva-se</a> <a href="/curso/enfermagem" target="_blank" class="content__btn-saiba-mais btn sm btn-color-bluegray outlined rounded" tabindex="0">Saiba Mais</a></div>
-                    </div>
-                </div>
-                <div class="carrosselItems">
-                    <div id="44734500cbad09850ce30d4d3f62f56b">
-                        <p class="content__title">
-                            Peagogia
-                        </p>
-                        <p class="content__type-and-time">
-                            Bacharelado - 10 Semestres
-                        </p>
-                        <div class="content--infos">
-                            <div style="min-height: 78px;">
-                                <ul class="content__modality-ul">
-                                    <li class="content__modality-item activeMod">
-                                        Semipresencial
-                                    </li>
-                                    <li class="content__modality-item">
-                                        Presencial
-                                    </li>
-                                </ul>
-                            </div>
-                            <div>
-                                <div class="content--details">
-                                    <p class="content__price">
-                                        R$ 299,00
-                                    </p>
-                                    <p class="content__shift">
-                                        Turnos:
-                                        Noite, Manhã
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="content--actions"><a href="/inscricao/?id=44734500cbad09850ce30d4d3f62f56b" target="_blank" class="btn btn-primary-hcontrast outlined rounded" tabindex="0">Inscreva-se</a> <a href="/curso/enfermagem" target="_blank" class="content__btn-saiba-mais btn sm btn-color-bluegray outlined rounded" tabindex="0">Saiba Mais</a></div>
-                    </div>
-                </div>
-                <div class="carrosselItems">
-                    <div id="44734500cbad09850ce30d4d3f62f56b">
-                        <p class="content__title">
-                            Peagogia
-                        </p>
-                        <p class="content__type-and-time">
-                            Bacharelado - 10 Semestres
-                        </p>
-                        <div class="content--infos">
-                            <div style="min-height: 78px;">
-                                <ul class="content__modality-ul">
-                                    <li class="content__modality-item activeMod">
-                                        Semipresencial
-                                    </li>
-                                    <li class="content__modality-item">
-                                        Presencial
-                                    </li>
-                                </ul>
-                            </div>
-                            <div>
-                                <div class="content--details">
-                                    <p class="content__price">
-                                        R$ 299,00
-                                    </p>
-                                    <p class="content__shift">
-                                        Turnos:
-                                        Noite, Manhã
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="content--actions"><a href="/inscricao/?id=44734500cbad09850ce30d4d3f62f56b" target="_blank" class="btn btn-primary-hcontrast outlined rounded" tabindex="0">Inscreva-se</a> <a href="/curso/enfermagem" target="_blank" class="content__btn-saiba-mais btn sm btn-color-bluegray outlined rounded" tabindex="0">Saiba Mais</a></div>
-                    </div>
-                </div> -->
             </div>
         </div>
     </div>
@@ -330,6 +196,11 @@
         </div>
     </div>
 </section>
+
+<a href="" class="buttonWhats">
+
+</a>
 <script src="<?= $base ?>/assets/js/scriptHeader.js"></script>
+<script src="<?=$base?>/assets/js/script.js"></script>
 
 <?php $render('footer'); ?>

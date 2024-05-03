@@ -290,6 +290,7 @@
             border-radius: 30px;
             border: solid 1px rgb(31, 25, 25);
             color: rgb(31, 25, 25);
+            cursor: pointer;
         }
         
         .buttons {
@@ -316,7 +317,7 @@
         }
         
         .comoIngressar {
-            width: 100%;
+            width: 100% !important;
         }
         
         .ingresso {
@@ -334,7 +335,7 @@
         }
         
         .ingressoLeft {
-            width: 40%;
+            width: 40% !important;
         }
         
         .ingressoRight {
@@ -380,6 +381,34 @@
         
         .font-weight-400 {
             font-weight: 400 !important;
+        }
+        
+        .buttonWhats {
+            border-radius: 100px;
+            z-index: 1000;
+            width: 60px;
+            height: 60px;
+            padding: 0;
+            position: fixed;
+            right: 3rem;
+            bottom: 4rem;
+            background-color: #00AC6B;
+            border: none;
+            box-shadow: 0 0 0 0 #00AC6B;
+            -webkit-box-shadow: 0 0 0 0 #00AC6B;
+            -webkit-animation: pulseFloater 2s infinite;
+            animation: pulseFloater 2s infinite;
+        }
+        
+        @keyframes pulseFloater {
+            70% {
+                -moz-box-shadow: 0 0 0 10px rgba(204, 169, 44, 0);
+                box-shadow: 0 0 0 10px rgba(204, 169, 44, 0);
+            }
+            100% {
+                -moz-box-shadow: 0 0 0 0 rgba(204, 169, 44, 0);
+                box-shadow: 0 0 0 0 rgba(204, 169, 44, 0);
+            }
         }
         
         @media (max-width:985px) {

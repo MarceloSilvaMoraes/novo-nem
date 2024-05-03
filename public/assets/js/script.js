@@ -5,7 +5,6 @@
 // })
 
 
-
 function abrirMenu() {
     if (!document.querySelector(".mBottom").classList.contains("menuAtivo")) {
         document.querySelector(".mBottom").classList.add("menuAtivo");
@@ -33,44 +32,26 @@ function abrirMenu() {
     }
 }
 
-function getSemOnline(valor) {
 
 
-    let idSemOnline = new FormData();
-    idSemOnline.append("idSemOnline", valor);
-    fetch("http://localhost/novo-nem/public/sem_online", {
-        method: "POST",
-        body: idSemOnline
+// function dados(val) {
+//     // console.log("semipresencial: " + val);
 
-    }).then(res => {
-        return res.json();
-    }).then((json) => {
-        console.log(json.id);
-        document.querySelector(".content__title").innerHTML = json.nome_curso_cem;
-        document.querySelector(".content__type-and-time").innerHTML = json.duracao02;
-        document.querySelector(".inativo").innerHTML = json.modalidade02;
-        document.querySelector(".content__price").innerHTML = json.preco02;
-        document.querySelector(".content__shift").innerHTML = json.turno02;
+//     let idSemi = new FormData();
+//     idSemi.append("idSemi", val);
+//     fetch("http://localhost/novo-nem/public/semi", {
+//         method: "POST",
+//         body: idSemi
 
-    })
-}
+//     }).then(res => {
+//         return res.json();
+//     }).then((json) => {
+//         console.log(json.id);
+//         document.querySelector(".content__title").innerHTML = json.nome_curso;
+//         document.querySelector(".content__type-and-time").innerHTML = json.duracao;
+//         document.querySelector(".inativo").innerHTML = json.modalidade;
+//         document.querySelector(".content__price").innerHTML = json.preco;
+//         document.querySelector(".content__shift").innerHTML = json.turno;
 
-function dados(val) {
-    let idSemi = new FormData();
-    idSemi.append("idSemi", val);
-    fetch("http://localhost/novo-nem/public/semi", {
-        method: "POST",
-        body: idSemi
-
-    }).then(res => {
-        return res.json();
-    }).then((json) => {
-        console.log(json.id);
-        document.querySelector(".content__title").innerHTML = json.nome_curso;
-        document.querySelector(".content__type-and-time").innerHTML = json.duracao;
-        document.querySelector(".inativo").innerHTML = json.modalidade;
-        document.querySelector(".content__price").innerHTML = json.preco;
-        document.querySelector(".content__shift").innerHTML = json.turno;
-
-    })
-}
+//     })
+// }

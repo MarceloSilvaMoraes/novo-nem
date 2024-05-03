@@ -11,9 +11,7 @@ class HomeController extends Controller
     {
         $data = new Cursos();
 
-        // $idSemi = filter_input(INPUT_POST, "idSemi");
         $dados = $data->getAllCursos();
-        // echo json_encode($dados);
         $this->render('home', [
             'dados' => $dados
         ]);
@@ -30,8 +28,8 @@ class HomeController extends Controller
     {
         $data = new Cursos();
 
-        $idSemOnline = filter_input(INPUT_POST, "idSemOnline");
-        $resposta = $data->cursos_semi($idSemOnline);
-        echo json_encode($resposta);
+        $idSemi = filter_input(INPUT_POST, "idSemi");
+        $res = $data->cursos_semi($idSemi);
+        echo json_encode($res);
     }
 }
