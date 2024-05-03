@@ -31,27 +31,3 @@ function abrirMenu() {
 
     }
 }
-
-
-
-// function dados(val) {
-//     // console.log("semipresencial: " + val);
-
-//     let idSemi = new FormData();
-//     idSemi.append("idSemi", val);
-//     fetch("http://localhost/novo-nem/public/semi", {
-//         method: "POST",
-//         body: idSemi
-
-//     }).then(res => {
-//         return res.json();
-//     }).then((json) => {
-//         console.log(json.id);
-//         document.querySelector(".content__title").innerHTML = json.nome_curso;
-//         document.querySelector(".content__type-and-time").innerHTML = json.duracao;
-//         document.querySelector(".inativo").innerHTML = json.modalidade;
-//         document.querySelector(".content__price").innerHTML = json.preco;
-//         document.querySelector(".content__shift").innerHTML = json.turno;
-
-//     })
-// }

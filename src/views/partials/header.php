@@ -4,16 +4,478 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="assets/imagens/logo.png" type="image/x-icon" />
-    <link rel="stylesheet" href="<?=$base?>/assets/css/style.css">
+    <link rel="icon" href="<?= $base ?>/assets/imagens/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="<?= $base ?>/assets/css/styleHeader.css" />
 
-    <link rel="stylesheet" href="<?=$base?>/assets/css/styleHeader.css">
+    <script src="assets/js/scriptHeader.js"></script>
+    <script src="assets/js/script.js"></script>
+    <style>
+        .bannerHome {
+            margin-bottom: 3.5rem;
+            overflow: hidden;
+        }
 
+        .container {
+            width: 100%;
+        }
+
+        .styleContainer {
+            width: 100%;
+            padding-right: 12px;
+            padding-left: 12px;
+            margin-right: auto;
+            margin-left: auto;
+            box-sizing: border-box;
+            display: flex;
+        }
+
+        .leftContainer {
+            display: flex;
+            -moz-box-pack: center;
+            justify-content: center;
+            flex-direction: column;
+            padding-right: 5px;
+            padding-left: 5px;
+            max-width: 58.3333%;
+            flex: 0 0 58.3333%;
+        }
+
+        .styleLeftContainer {
+            display: flex;
+            -moz-box-pack: center;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width: 100%;
+            padding: 1rem 0px;
+        }
+
+        .slc {
+            width: 100%;
+        }
+
+        .textLeft01 {
+            display: flex;
+            -moz-box-align: center;
+            align-items: center;
+            -moz-box-pack: center;
+            justify-content: center;
+            flex-direction: column;
+            width: 100%;
+        }
+
+        .textLeft01 div {
+            background: rgb(10, 60, 125);
+            transform: rotate(-2deg);
+            box-sizing: content-box;
+            border-radius: 24px;
+            padding: 0 3rem;
+        }
+
+        .textLeft01 h4 {
+            /* margin-bottom: 0px; */
+            color: rgb(255, 255, 255);
+            /* font-size: 2rem; */
+            font-weight: 100;
+            line-height: 0.1rem;
+            font-size: calc(2rem - 0.5vw);
+        }
+
+        .textLeft02 {
+            display: flex;
+            -moz-box-align: center;
+            align-items: center;
+            -moz-box-pack: center;
+            justify-content: center;
+            flex-direction: column;
+            width: 100%;
+        }
+
+        .textLeft02 div {
+            padding: 0 3rem;
+            border-radius: 24px;
+            box-sizing: content-box;
+            transform: rotate(-1deg);
+            background: rgb(243, 83, 89);
+        }
+
+        .textLeft02 h2 {
+            /* margin-bottom: 1px; */
+            color: rgb(255, 255, 255);
+            font-size: 3rem;
+            line-height: 1rem;
+        }
+
+        .textLeft03 {
+            display: flex;
+            -moz-box-align: center;
+            align-items: center;
+            -moz-box-pack: center;
+            justify-content: center;
+            flex-direction: column;
+            width: 100%;
+        }
+
+        .textLeft03 div {
+            padding: 0 2rem;
+            border-radius: 24px;
+            box-sizing: content-box;
+            transform: rotate(2deg);
+            background: rgb(240, 120, 0);
+        }
+
+        .textLeft03 h3 {
+            /* margin-bottom: 0px; */
+            color: rgb(255, 255, 255);
+            font-size: 3rem;
+            line-height: 2rem;
+        }
+
+        .leftInfo p {
+            font-size: 20px;
+            text-align: center;
+            padding: 1rem 2rem;
+        }
+
+        .leftButtonOrg {
+            display: flex;
+            -webkit-box-align: center;
+            align-items: center;
+            width: 100%;
+            gap: 1rem;
+            -webkit-box-pack: center;
+            justify-content: center;
+        }
+
+        .leftButton {
+            max-width: 40%;
+        }
+
+        .leftButton a {
+            padding: 0px 3.5rem;
+            text-decoration: none;
+            background-color: transparent;
+            border: 1px solid rgb(240, 120, 0);
+            border-radius: 30px;
+            font-weight: bold;
+            color: rgb(240, 120, 0);
+            cursor: pointer;
+            font-family: Montserrat, sans-serif;
+            min-height: 44px;
+            min-width: 110px;
+            position: relative;
+            display: flex;
+            -webkit-box-align: center;
+            align-items: center;
+            -webkit-box-pack: center;
+            justify-content: center;
+            line-height: initial;
+            text-align: center;
+            font-size: 1rem;
+            transition: all 0.3s ease 0s;
+        }
+
+        .rightContainer {
+            padding-right: 5px;
+            padding-left: 5px;
+            max-width: 41.6667%;
+            flex: 0 0 41.6667%;
+        }
+
+        .rightContainerImg img {
+            width: 100%;
+        }
+
+        .containerCursos {
+            width: 100%;
+            max-width: 1440px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        .containerCursos .titulo {
+            color: var(--primary-hcontrast);
+            font-size: 40px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 42px;
+            text-transform: uppercase;
+            margin-bottom: 32px;
+            margin-top: 0;
+            padding-left: 1rem;
+        }
+
+        .titulo .carrossel {
+            margin: 0 auto;
+            width: 90%;
+            padding-bottom: 90px;
+            display: flex;
+        }
+
+        .carrosselWidth {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            /* overflow: hidden; */
+        }
+
+        .slider {
+            margin: 0 auto;
+            width: 910px;
+            height: 400px;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+        }
+
+        .slides {
+            display: flex;
+            /* justify-content: center; */
+            transition: all ease 0.3s;
+            /* width: 400%; */
+            height: 400px;
+        }
+
+        .carrosselItems {
+            background: #ffffff;
+            box-shadow: 0 16px 20px -11px rgba(0, 0, 0, .18);
+            border: 1px solid #d1d1d1;
+            border-radius: 24px;
+            display: flex;
+            flex-direction: column;
+            padding: 24px 16px;
+            box-sizing: border-box;
+            margin: 0 5px 20px 5px;
+            width: 289px;
+        }
+
+        .content__title,
+        .content__price {
+            font-weight: bold;
+        }
+
+        .content--actions {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .content__type-and-time,
+        .content__shift {
+            color: #4d4d4d;
+        }
+
+        .content--actions a {
+            padding: 8px;
+            border-radius: 24px;
+            text-decoration: none;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .btn-primary-hcontrast {
+            border: 1px solid #f00101;
+            margin-bottom: 8px;
+            color: red;
+        }
+
+        .content__btn-saiba-mais {
+            border: 1px solid #8a97d1;
+            color: #8a97d1;
+        }
+
+        .content__modality-ul {
+            display: flex;
+            justify-content: space-between;
+            list-style: none;
+            padding: 0;
+        }
+
+        .activeMod {
+            color: red !important;
+            border: solid 1px rgb(255 0 0) !important;
+        }
+
+        .content__modality-item {
+            padding: 7px;
+            border-radius: 30px;
+            border: solid 1px rgb(31, 25, 25);
+            color: rgb(31, 25, 25);
+            cursor: pointer;
+        }
+
+        .buttons {
+            width: 100%;
+            padding-bottom: 1rem;
+            /* padding: 1rem; */
+            /* background-color: red; */
+        }
+
+        .orgButtons {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #buttonLeft,
+        #buttonRight {
+            height: 10px;
+            width: 10px;
+            border-radius: 50%;
+            background-color: blue;
+            margin-left: 10px;
+        }
+
+        .comoIngressar {
+            width: 100% !important;
+        }
+
+        .ingresso {
+            padding: 2rem;
+            border: solid 1px #4d4d4d;
+            border-radius: 1rem;
+            height: auto;
+            margin: 1rem;
+        }
+
+        .ingressoOrg {
+            display: flex;
+            justify-content: flex-end;
+            justify-content: space-between;
+        }
+
+        .ingressoLeft {
+            width: 40% !important;
+            border-radius: 10px;
+            /* border: solid 1px #ddd; */
+        }
+
+        .ingressoRight {
+            width: 55%;
+        }
+
+        .ingressoLeft img {
+            /* display: grid;
+            user-select: none;
+            pointer-events: none; */
+            border-radius: 10px;
+            width: 20rem;
+            border-radius: 10px;
+            height: 500px;
+            display: block;
+        }
+
+        .py-3 {
+            padding-top: 2rem !important;
+            padding-bottom: 2rem !important;
+        }
+
+        .row {
+            box-sizing: border-box;
+            margin: -1rem;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            flex: 0 1 auto;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        .col-sm-6 {
+            box-sizing: border-box;
+            flex-basis: 50%;
+            max-width: 50%;
+            padding: 1rem;
+        }
+
+        .title.semibold {
+            font-weight: 600;
+        }
+
+        .font-weight-400 {
+            font-weight: 400 !important;
+        }
+
+        .buttonWhats {
+            border-radius: 100px;
+            z-index: 1000;
+            width: 60px;
+            height: 60px;
+            padding: 0;
+            position: fixed;
+            right: 3rem;
+            bottom: 4rem;
+            background-color: #00AC6B;
+            border: none;
+            box-shadow: 0 0 0 0 #00AC6B;
+            -webkit-box-shadow: 0 0 0 0 #00AC6B;
+            -webkit-animation: pulseFloater 2s infinite;
+            animation: pulseFloater 2s infinite;
+        }
+
+        @keyframes pulseFloater {
+            70% {
+                -moz-box-shadow: 0 0 0 10px rgba(204, 169, 44, 0);
+                box-shadow: 0 0 0 10px rgba(204, 169, 44, 0);
+            }
+
+            100% {
+                -moz-box-shadow: 0 0 0 0 rgba(204, 169, 44, 0);
+                box-shadow: 0 0 0 0 rgba(204, 169, 44, 0);
+            }
+        }
+
+        @media (max-width:985px) {
+            .styleContainer {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .slider {
+                width: 410px;
+            }
+
+            .leftButtonOrg {
+                display: flex;
+                -webkit-box-align: center;
+                align-items: center;
+                width: auto;
+                gap: 1rem;
+                -webkit-box-pack: center;
+                justify-content: unset;
+            }
+
+            .textLeft01 h4 {
+                display: none;
+            }
+
+            .textLeft03 h3 {
+                line-height: 3rem;
+            }
+        }
+
+        @media (max-width:805px) {
+            .ingressoLeft img {
+                display: none;
+            }
+
+            .ingressoRight {
+                width: 100%;
+            }
+
+            .ingressoLeft {
+                width: 0%;
+            }
+        }
+    </style>
 </head>
 
 <body>
 
-    <header class="header">
+    <div class="header">
         <div class="main">
             <div class="main-top">
                 <div class="mLeft">
@@ -85,5 +547,4 @@
             </div>
         </div>
 
-    </header>
-
+    </div>

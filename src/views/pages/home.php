@@ -50,7 +50,6 @@
         </div>
     </div>
 </section>
-
 <div class="containerCursos">
     <h2 class="titulo">Os mais populares</h2>
     <div class="carrosselWidth">
@@ -63,7 +62,7 @@
                                 <?php echo $res['nome_curso']; ?>
                             </p>
                             <p class="content__type-and-time">
-                                Bacharelado - <?php echo $res['duracao']; ?>
+                                <?php echo $res['duracao']; ?>
                             </p>
                             <div class="content--infos">
                                 <div class="" style="min-height: 78px;">
@@ -82,7 +81,7 @@
                                             <?php echo $res['preco']; ?>
                                         </p>
                                         <p class="content__shift">
-                                            Turnos:
+                                            <span>Turnos:</span>
                                             <?php echo $res['turno']; ?>
                                         </p>
                                     </div>
@@ -99,8 +98,6 @@
         </div>
     </div>
 </div>
-</div>
-</div>
 <div class="buttons">
     <div class="orgButtons">
         <span id="buttonLeft" onclick="goPrev() "></span>
@@ -109,12 +106,12 @@
         </span>
     </div>
 </div>
-</div>
-<section class="comoIngressar">
+
+<div class="comoIngressar">
     <div class="ingresso">
         <div class="ingressoOrg">
             <div class="ingressoLeft">
-                <img src="<?= $base ?>/assets/images/left.jpg">
+                <img src="/assets/images/left.jpg" alt="alunos">
             </div>
             <div class="ingressoRight">
                 <h1>ESCOLHA COMO INGRESSAR</h1>
@@ -195,12 +192,13 @@
             </div>
         </div>
     </div>
-</section>
+</div>
 
 <a href="" class="buttonWhats">
 
 </a>
-<script src="<?= $base ?>/assets/js/scriptHeader.js"></script>
-<script src="<?=$base?>/assets/js/script.js"></script>
+
+
+
 
 <?php $render('footer'); ?>

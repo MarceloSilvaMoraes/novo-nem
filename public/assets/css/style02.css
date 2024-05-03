@@ -310,6 +310,12 @@ head {
     align-items: center;
 }
 
+.comoIngressar {
+    width: 100% !important;
+    background-color: red;
+    height: 800px;
+}
+
 #buttonLeft,
 #buttonRight {
     height: 10px;
@@ -321,6 +327,14 @@ head {
 
 .comoIngressar {
     width: 100% !important;
+    background-color: red;
+    height: 800px;
+}
+
+.teste {
+    width: 100% !important;
+    background-color: red;
+    height: 800px;
 }
 
 .ingresso {
@@ -337,14 +351,9 @@ head {
     justify-content: space-between;
 }
 
-
-/* .ingressoLeft {
+.ingressoLeft {
     width: 40% !important;
-    border-radius: 10px;
-    border: solid 1px #ddd;
-
-
-} */
+}
 
 .ingressoRight {
     width: 55%;
