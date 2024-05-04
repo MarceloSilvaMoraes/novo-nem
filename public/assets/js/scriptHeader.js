@@ -1,39 +1,3 @@
-let qtItems = document.querySelectorAll(".carrosselItems").length;
-let slides = document.querySelector(".slides").style.width = `calc(289px * ${qtItems})`;
-
-let slideCurrent = 0;
-
-function goPrev() {
-
-    slideCurrent--;
-    if (slideCurrent < (-qtItems) + 1) {
-        slideCurrent = 0;
-    }
-    updateMargin();
-
-}
-
-function goNext() {
-    slideCurrent++;
-
-    if (slideCurrent > (qtItems - 1)) {
-        slideCurrent = 0;
-
-    }
-    updateMargin()
-}
-
-function updateMargin() {
-    let slideWidth = document.querySelector(".carrosselItems").clientWidth;
-
-    let newMargin = (slideCurrent * slideWidth);
-    let num = 2 * newMargin;
-    let widt = document.querySelector(".carrosselOverflow").style.marginLeft = `${num}px`;
-
-
-}
-
-
 let inativos = document.querySelectorAll(".content__modality-item");
 inativos.forEach((ativo, indexA) => {
     ativo.addEventListener("click", () => {

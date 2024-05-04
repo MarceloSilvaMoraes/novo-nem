@@ -111,7 +111,7 @@
     <div class="ingresso">
         <div class="ingressoOrg">
             <div class="ingressoLeft">
-                <img src="/assets/images/left.jpg" alt="alunos">
+                <img src="<?=$base; ?>/assets/images/left.jpg" alt="alunos">
             </div>
             <div class="ingressoRight">
                 <h1>ESCOLHA COMO INGRESSAR</h1>
@@ -199,6 +199,7 @@
 </a>
 
 
-
+<script src="<?= $base?>/assets/js/scriptHeader.js"></script>
+    <script src="<?=$base?>/assets/js/script.js"></script>
 
 <?php $render('footer'); ?>

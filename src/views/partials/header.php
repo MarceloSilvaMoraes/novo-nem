@@ -7,8 +7,7 @@
     <link rel="icon" href="<?= $base ?>/assets/imagens/logo.png" type="image/x-icon" />
     <link rel="stylesheet" href="<?= $base ?>/assets/css/styleHeader.css" />
 
-    <script src="assets/js/scriptHeader.js"></script>
-    <script src="assets/js/script.js"></script>
+    
     <style>
         .bannerHome {
             margin-bottom: 3.5rem;
@@ -346,7 +345,7 @@
         }
 
         .ingressoLeft {
-            width: 40% !important;
+            width: 40%;
             border-radius: 10px;
             /* border: solid 1px #ddd; */
         }
