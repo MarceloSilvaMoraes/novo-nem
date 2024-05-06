@@ -1,97 +1,93 @@
-<script>
-    let inativos = document.querySelectorAll(".content__modality-item");
-    inativos.forEach((ativo, indexA) => {
-        ativo.addEventListener("click", () => {
-            if (!ativo.classList.contains("activeMod")) {
-                ativo.classList.add("activeMod");
-                ativo.previousElementSibling.classList.remove("activeMod");
-                // console.log(ativo);
-            }
-        })
+<div class="footer">
+    <div class="orgDadosFooter">
+        <div class="oDf">
+            <div class="dadosFooter">
+                <div class="dados">
+                    <div class="dadosResponsive">
+                        <strong>O Grupo Nem</strong>
+                        <span>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </span>
+                    </div>
+                    <ul>
+                        <li><a target="_blank" href="">Nossa História</a></li>
+                    </ul>
+                </div>
+                <div class="dados">
+                    <div class="dadosResponsive">
+                        <strong>Cursos em Alta</strong>
+                        <span>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </span>
+                    </div>
+                    <ul>
+                        <li> <a target="_blank" href="">Educação Física</a></li>
+                        <li> <a target="_blank" href="">Enfermagem</a></li>
+                        <li><a target="_blank" href="">Pedagogia</a></li>
+                        <li> <a target="_blank" href="">Administração</a></li>
+                        <li> <a target="_blank" href="">Farmacia</a></li>
+                    </ul>
 
-    })
-    let ddd = document.querySelectorAll(".content__modality-item.activeMod");
-    ddd.forEach((at, inde) => {
-        at.addEventListener("click", () => {
-            if (at.classList.contains("activeMod")) {
-                at.classList.add("activeMod");
-                at.nextElementSibling.classList.remove("activeMod");
+                </div>
+                <div class="dados">
+                    <div class="dadosResponsive">
+                        <strong>Pós-Graduação</strong>
+                        <span>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </span>
+                    </div>
+                    <ul>
+                        <li><a target="_blank" href="">Pós-Graduação e MBA (Lato Sensu)</a></li>
+                        <li><a target="_blank" href="">Conheça os Cursos de Pós Graduação</a></li>
+                        <li><a target="_blank" href="">Blog de Pós-Graduação</a></li>
+                        <li><a target="_blank" href="">Principais dúvidas Pós Graduação</a></li>
+                        <li><a target="_blank" href="">Pós Graduação - Cursos Livres</a></li>
+                    </ul>
+                </div>
+                <div class="dados">
+                    <div class="dadosResponsive">
+                        <strong>Como Ingressar</strong>
+                        <span>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </span>
+                    </div>
+                    <ul>
+                        <li> <a target="_blank" href="">Faça o Vestibular 2024</a></li>
+                        <li><a target="_blank" href="">Vestibular Online</a></li>
+                        <li><a target="_blank" href="">Transfira-se para a Unopar - Presencial</a></li>
+                        <li><a target="_blank" href="">Transfira-se para a Unopar - EAD</a></li>
+                        <li><a target="_blank" href="">Nota do ENEM</a></li>
+                        <li><a target="_blank" href="">Segunda Graduação</a></li>
+                        <li><a target="_blank" href="">Programa Amigo Vale Prêmio</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="redes_sociais">
+                <h3>Redes Sociais</h3>
 
-            }
-        })
+                <div class="orgRedes_sociais">
+                    <a target="_blank" href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a target="_blank" href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a target="_blank" href=""><i class="fa-brands fa-youtube"></i></a>
+                    <a target="_blank" href=""><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="bottomFooter">
+            <div class="orgBottomFooter">
+                <img src="<?= $base ?>/assets/images/logo.png" width="70px">
+                <p class="copy">
+                    © Copyright 2024 Grupo Nem. Todos os direitos reservados.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
 
-    })
 
+<script src="<?= $base ?>/assets/js/script.js" ></script>
+<script src="<?= $base ?>/assets/js/scriptHeader.js" ></script>
 
-
-    let itens = document.querySelectorAll(".inativo");
-    let itensactiveMod = document.querySelectorAll(".activeMod");
-    let carrousselItem = document.querySelectorAll(".carrosselItems .car");
-    itens.forEach((item) => {
-        item.addEventListener("click", () => {
-            carrousselItem.forEach((carroussel) => {
-                console.log(carroussel.id);
-                if (item.id == carroussel.id) {
-                    let idSemOnline = new FormData();
-                    idSemOnline.append("idSemOnline", item.id);
-                    fetch("sem_online", {
-                        method: "POST",
-                        mode: 'cors',
-                        body: idSemOnline
-
-                    }).then(res => {
-                        return res.json();
-                    }).then((json) => {
-                        // console.log(json.id);
-                        carroussel.querySelector(".content__title").innerHTML = json.nome_curso_cem;
-                        carroussel.querySelector(".content__type-and-time").innerHTML = json.duracao02;
-                        // carroussel.querySelector(".inativo").innerHTML = json.modalidade02;
-                        carroussel.querySelector(".content__price").innerHTML = json.preco02;
-                        carroussel.querySelector(".content__shift").innerHTML = json.turno02;
-
-                    })
-
-                }
-            })
-
-        })
-
-    })
-
-    itensactiveMod.forEach((itensactiveMod) => {
-        itensactiveMod.addEventListener("click", () => {
-            carrousselItem.forEach((carrousselSemi) => {
-                // console.log(carrousselSemi.id);
-                if (itensactiveMod.id == carrousselSemi.id) {
-
-                    let idSemi = new FormData();
-                    idSemi.append("idSemi", itensactiveMod.id);
-                    fetch("semi", {
-                        method: "POST",
-                        mode: 'cors',
-                        body: idSemi
-
-                    }).then(res => {
-                        return res.json();
-                    }).then((json) => {
-                        // console.log(json);
-                        carrousselSemi.querySelector(".content__title").innerHTML = json.nome_curso;
-                        carrousselSemi.querySelector(".content__type-and-time").innerHTML = json.duracao;
-                        // carrousselSemi.querySelector(".inativo").innerHTML = json.modalidade;
-                        carrousselSemi.querySelector(".content__price").innerHTML = json.preco;
-                        carrousselSemi.querySelector(".content__shift").innerHTML = json.turno;
-
-                    })
-
-                }
-            })
-
-        })
-
-    })
-
-    
-</script>
 </body>
 
 </html>

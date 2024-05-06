@@ -1,7 +1,3 @@
-head {
-    display: block !important;
-}
-
 .bannerHome {
     margin-bottom: 3.5rem;
     overflow: hidden;
@@ -288,7 +284,7 @@ head {
     border: solid 1px rgb(255 0 0) !important;
 }
 
-.content__modality-item {
+.content__modality_item {
     padding: 7px;
     border-radius: 30px;
     border: solid 1px rgb(31, 25, 25);
@@ -329,6 +325,7 @@ head {
     border-radius: 1rem;
     height: auto;
     margin: 1rem;
+    margin-bottom: 6rem;
 }
 
 .ingressoOrg {
@@ -337,26 +334,25 @@ head {
     justify-content: space-between;
 }
 
-
-/* .ingressoLeft {
-    width: 40% !important;
+.ingressoLeft {
+    width: 40%;
     border-radius: 10px;
-    border: solid 1px #ddd;
-
-
-} */
+    /* border: solid 1px #ddd; */
+}
 
 .ingressoRight {
     width: 55%;
 }
 
 .ingressoLeft img {
-    width: 20rem;
-    position: relative;
-    display: grid;
+    /* display: grid;
     user-select: none;
-    pointer-events: none;
+    pointer-events: none; */
     border-radius: 10px;
+    width: 20rem;
+    border-radius: 10px;
+    height: 500px;
+    display: block;
 }
 
 .py-3 {
@@ -380,10 +376,25 @@ head {
     flex-basis: 50%;
     max-width: 50%;
     padding: 1rem;
+    line-height: 27px;
+    color: #4d4d4d;
 }
 
 .title.semibold {
     font-weight: 600;
+    border-bottom: dotted;
+}
+
+.title {
+    font-size: 1.25rem;
+    color: var(--text);
+    text-decoration: none;
+    display: flex;
+    font-family: Signika, system-ui;
+    align-items: center;
+    line-height: 1.1;
+    width: max-content;
+    margin-bottom: 5px;
 }
 
 .font-weight-400 {
@@ -391,6 +402,9 @@ head {
 }
 
 .buttonWhats {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border-radius: 100px;
     z-index: 1000;
     width: 60px;
@@ -405,6 +419,110 @@ head {
     -webkit-box-shadow: 0 0 0 0 #00AC6B;
     -webkit-animation: pulseFloater 2s infinite;
     animation: pulseFloater 2s infinite;
+    text-decoration: none;
+}
+
+.buttonWhats i {
+    font-size: 40px;
+    color: white;
+}
+
+.footer {
+    width: 100%;
+    margin: 0px;
+    background: rgb(237, 237, 237);
+    color: rgb(29, 29, 29);
+    box-sizing: border-box;
+}
+
+.oDf {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.dadosFooter {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.dados {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.dados i {
+    display: none;
+}
+
+.dados strong {
+    margin-bottom: 10px;
+    font-family: Montserrat, sans-serif;
+    font-size: 1rem;
+    line-height: 3.25rem;
+    font-weight: 700;
+    margin: 0px;
+    color: rgb(29, 29, 29);
+}
+
+.dados ul {
+    padding: 0;
+    transition: all 0.3s;
+}
+
+.dados ul li {
+    list-style: none;
+    padding-bottom: 2rem;
+}
+
+.dados ul li a {
+    text-decoration: none;
+    display: initial;
+    width: initial;
+    color: rgb(29, 29, 29);
+    font-size: 1rem;
+    font-family: Montserrat, sans-serif;
+    font-weight: 400;
+}
+
+.dados ul li a:hover {
+    text-decoration: underline;
+}
+
+.orgRedes_sociais {
+    display: flex;
+    /* flex-direction: column; */
+}
+
+.redes_sociais a i {
+    font-weight: 400;
+    font-size: 30px;
+    text-decoration: none;
+    color: black;
+    margin: 15px;
+}
+
+.bottomFooter {
+    width: 100%;
+    padding: 24px 0px;
+    margin: 0px auto;
+    background: rgb(252, 252, 252);
+    box-sizing: border-box;
+}
+
+.orgBottomFooter,
+.redes_sociais {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 @keyframes pulseFloater {
@@ -442,6 +560,38 @@ head {
     }
     .textLeft03 h3 {
         line-height: 3rem;
+    }
+    .dadosFooter {
+        display: flex;
+        flex-direction: column;
+    }
+    .dados {
+        margin: 20px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .dadosResponsive {
+        width: 95%;
+        display: flex;
+        justify-content: space-between;
+        border-bottom: solid 2px #000;
+    }
+    .dados ul {
+        display: none;
+        transition: all 0.3s;
+    }
+    .dados ul li {
+        transition: all 0.3s;
+    }
+    .dados i {
+        display: flex;
+        width: 24px;
+        height: 24px;
+        color: #aeaab5;
+    }
+    .dados strong {
+        line-height: 2rem;
     }
 }
 

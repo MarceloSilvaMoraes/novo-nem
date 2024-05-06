@@ -67,10 +67,10 @@
                             <div class="content--infos">
                                 <div class="" style="min-height: 78px;">
                                     <ul class="content__modality-ul">
-                                        <li class="content__modality-item activeMod" id="<?php echo $res['id']; ?>">
+                                        <li class="content__modality_item activeMod" id="<?php echo $res['id']; ?>">
                                             <?php echo $res['modalidade']; ?>
                                         </li>
-                                        <li class="content__modality-item inativo" data="<?php echo $res['id']; ?>" id="<?php echo $res['id_modalidade02']; ?>">
+                                        <li class="content__modality_item inativo" data="<?php echo $res['id']; ?>" id="<?php echo $res['id_modalidade02']; ?>">
                                             <?php echo $res['modalidade02']; ?>
                                         </li>
                                     </ul>
@@ -111,7 +111,7 @@
     <div class="ingresso">
         <div class="ingressoOrg">
             <div class="ingressoLeft">
-                <img src="<?=$base; ?>/assets/images/left.jpg" alt="alunos">
+                <img src="<?= $base; ?>/assets/images/left.jpg" alt="alunos">
             </div>
             <div class="ingressoRight">
                 <h1>ESCOLHA COMO INGRESSAR</h1>
@@ -195,11 +195,10 @@
 </div>
 
 <a href="" class="buttonWhats">
-
+    <i class="fa-brands fa-whatsapp"></i>
 </a>
 
-
-<script src="<?= $base?>/assets/js/scriptHeader.js"></script>
-    <script src="<?=$base?>/assets/js/script.js"></script>
-
 <?php $render('footer'); ?>
+
+<script src="<?= $base ?>/assets/js/scriptHeader.js"></script>
+<script src="<?= $base ?>/assets/js/script.js"></script>

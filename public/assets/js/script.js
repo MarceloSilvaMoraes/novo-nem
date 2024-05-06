@@ -1,50 +1,46 @@
-function abrirMenu() {
-    if (!document.querySelector(".mBottom").classList.contains("menuAtivo")) {
-        document.querySelector(".mBottom").classList.add("menuAtivo");
-    } else {
-        document.querySelector(".mBottom").classList.remove("menuAtivo");
-    }
+let footerMenu = document.querySelectorAll(".dados");
+footerMenu.forEach((menu) => {
+    // menu.querySelector("ul").style.display = "none";
+    menu.querySelector("ul li").style.transition = "all 0.5s";
 
-    if (!document.querySelector(".mRight").classList.contains("menuAtivo")) {
-        document.querySelector(".mRight").classList.add("menuAtivo");
-    } else {
-        document.querySelector(".mRight").classList.remove("menuAtivo");
-    }
-    if (!document.querySelector(".burguer").classList.contains("xburguer")) {
-        document.querySelector(".burguer").style.display = "none";
-        document.querySelector(".burguer").style.width = "0px";
-        document.querySelector(".burguer").classList.add("xburguer");
-        document.querySelector(".xburguer").style.display = "block";
-    } else {
-        document.querySelector(".burguer").style.width = "33px";
+    menu.addEventListener("click", () => {
+        menu.querySelector("ul").style.transition = "all 0.5s";
 
-        document.querySelector(".burguer").style.display = "block";
-        document.querySelector(".burguer").classList.remove("xburguer");
-        document.querySelector(".xburguer").style.display = "none";
 
-    }
+        if (menu.querySelector("ul").style.display == "none") {
+            menu.querySelector("ul").style.display = "block";
+
+        } else {
+            menu.querySelector("ul").style.display = "none";
+
+        }
+
+
+    })
+})
+
+var inativos = document.querySelectorAll(".content__modality_item");
+// console.log(inativos);
+if (inativos) {
+    inativos.forEach((ativo) => {
+        ativo.addEventListener("click", () => {
+            if (!ativo.classList.contains("activeMod")) {
+                ativo.classList.add("activeMod");
+                ativo.previousElementSibling.classList.remove("activeMod");
+                // console.log(ativo);
+            }
+        })
+
+    })
 }
 
-
-
-let inativos = document.querySelectorAll(".content__modality-item");
-inativos.forEach((ativo, indexA) => {
-    ativo.addEventListener("click", () => {
-        if (!ativo.classList.contains("activeMod")) {
-            ativo.classList.add("activeMod");
-            ativo.previousElementSibling.classList.remove("activeMod");
-            // console.log(ativo);
-        }
-    })
-
-})
-let ddd = document.querySelectorAll(".content__modality-item.activeMod");
-ddd.forEach((at, inde) => {
+let activo = document.querySelectorAll(".content__modality_item.activeMod");
+// console.log(activo);
+activo.forEach((at) => {
     at.addEventListener("click", () => {
         if (at.classList.contains("activeMod")) {
             at.classList.add("activeMod");
             at.nextElementSibling.classList.remove("activeMod");
-
         }
     })
 
